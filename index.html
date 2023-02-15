@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="h-screen w-screen bg-no-repeat bg-cover"
+        style="background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 100%), url(./img/bank-bg.jpg);">
+        <div class="flex items-center justify-center h-full w-3/4 mx-auto">
+            <div class="w-1/2 text-left">
+                <h1 class="text-7xl text-sky-500 font-bold">Welcome to <span
+                        class="font-extrabold text-green-500 underline decoration-green-500">HSBC</span> Bank</h1>
+            </div>
+
+            <div class="w-1/2 bg-white rounded-lg text-center p-6">
+                <img src="./img/bank.png" alt="" class="mx-auto">
+                <h2 class="text-4xl text-black font-semibold mb-6">Bank Corporate</h2>
+                <div>
+                    <input type="email" name="" id="user-email" placeholder="Enter User Email"
+                        class="p-4 border border-gray-300 w-full mb-5">
+                    <input type="password" name="" id="user-password" placeholder="Enter User Password"
+                        class="p-4 border border-gray-300 w-full mb-5">
+                    <button class="bg-red-500 font-semibold text-white py-5 w-full text-xl hover:bg-red-600"
+                        id="login-btn">Login</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/login.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+
+</body>
+
+</html>
