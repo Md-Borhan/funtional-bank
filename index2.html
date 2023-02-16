@@ -9,46 +9,48 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="overflow-hidden">
-    <main class="h-screen w-screen bg-no-repeat bg-cover"
+<body class="">
+    <main class="bg-cover h-full w-full pb-12"
         style="background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 100%), url(./img/bank-bg2.jpg);">
         <section class="w-3/4 mx-auto ">
-            <h1 class="text-6xl text-center pt-6 text-sky-600 font-bold">Welcome to Our <span
+            <h1 class="text-4xl md:text-6xl text-center pt-6 text-sky-600 font-bold">Welcome to Our <span
                     class="font-extrabold text-green-500 uppercase text-7xl">Bank !!!</span></h1>
-            <div class="grid grid-cols-3 gap-5 mt-12">
-                <div class="bg-green-500 rounded-lg text-white p-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12">
+                <div class="bg-green-500 rounded-lg text-white p-8 text-center md:text-left">
                     <h2 class="text-3xl font-semibold mb-2 inline">Deposit</h2>
-                    <img src="./img/deposit.png" alt="" class="inline ml-3">
+                    <img src="./img/deposit.png" alt="" class="block sm:inline mx-auto sm:ml-3">
                     <h4 class="text-5xl font-medium">$<span id="total-deposit">00</span></h4>
                 </div>
-                <div class="bg-green-500 rounded-lg text-white p-8">
+                <div class="bg-green-500 rounded-lg text-white p-8 text-center md:text-left">
                     <h2 class="text-3xl font-semibold mb-2 inline">Withdraw</h2>
-                    <img src="./img/withdraw.png" alt="" class="inline ml-3">
+                    <img src="./img/withdraw.png" alt="" class="block sm:inline mx-auto sm:ml-3">
                     <h4 class="text-5xl font-medium">$<span id="total-withdraw">00</span></h4>
                 </div>
-                <div class="bg-lime-500 rounded-lg text-white p-8">
+                <div class="bg-lime-500 rounded-lg text-white p-8 text-center md:text-left">
                     <h2 class="text-3xl font-semibold mb-2 inline">Balance</h2>
-                    <img src="./img/balance.png" alt="" class="inline ml-3">
+                    <img src="./img/balance.png" alt="" class="block sm:inline mx-auto sm:ml-3">
                     <h4 class="text-5xl font-medium">$<span id="total-balance">1240</span></h4>
                 </div>
             </div>
         </section>
 
         <section class="w-3/4 mx-auto mt-8">
-            <div class="grid grid-cols-2 gap-5">
-                <div class="bg-sky-500 rounded-lg p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="bg-sky-500 rounded-lg p-8 text-center md:text-left">
                     <h2 class="text-3xl font-semibold mb-5 text-white">Your Deposit</h2>
                     <p id="invalid-text"></p>
-                    <input type="number" name="" id="deposit-field" class="rounded-lg block py-3 px-2 w-full"
+                    <input type="number" name="" id="deposit-field"
+                        class="rounded-lg block py-3 px-2 w-full placeholder:text-xs sm:placeholder:text-base"
                         placeholder="$ Your Deposit Amount">
                     <button
                         class="bg-purple-600 rounded-md py-3 px-7 text-white font-semibold  hover:bg-purple-700 text-lg mt-5"
                         id="deposit-btn">Deposit</button>
                 </div>
-                <div class="bg-sky-500 rounded-lg p-8">
+                <div class="bg-sky-500 rounded-lg p-8 text-center md:text-left">
                     <h2 class="text-3xl font-semibold mb-5 text-white">Your Withdraw</h2>
                     <p id="invalid-text2"></p>
-                    <input type="number" name="" id="withdraw-field" class="rounded-lg block py-3 px-2 w-full"
+                    <input type="number" name="" id="withdraw-field"
+                        class="rounded-lg block py-3 px-2 w-full placeholder:text-xs sm:placeholder:text-base"
                         placeholder="$ Your Withdraw Amount">
                     <button
                         class="bg-purple-600 rounded-md py-3 px-7 text-white font-semibold  hover:bg-purple-700 text-lg mt-5"
